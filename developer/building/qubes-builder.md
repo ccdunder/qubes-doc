@@ -155,6 +155,7 @@ Next, specify which components (`gcc`, for example) you want to download instead
 
 Alternatively, edit the actual COMPONENTS list which is defined in the included version-dependent config from example-configs (see series of include directives near the beginning of `builder.conf`).
 This way, you can build only the packages in which you are interested.
+**Note** If you do this, make sure to retain any builder plugin components (`builder-*`) that are included in `BUILDER_PLUGINS` ([to ensure they're downloaded](https://github.com/marmarek/qubes-builder/blob/master/doc/Configuration.md#builder_plugins)).
 
 If you also want to use the 'current-testing' repository, add this to your configuration:
 
